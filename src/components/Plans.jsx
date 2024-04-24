@@ -27,6 +27,9 @@ function Plans() {
     setInput(e.target.value);
   }
 
+  function reset() {
+    setPlans([]);
+  }
   return (
     <>
       <div className="container">
@@ -50,6 +53,12 @@ function Plans() {
           ) : (
             plans.map((plan) => <PlanCard plan={plan} key={id++}></PlanCard>)
           )}
+          {plans}
+        </div>
+        <div className="reset-container">
+          <button onClick={reset} className="reset">
+            RESET
+          </button>
         </div>
       </div>
     </>

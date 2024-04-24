@@ -4,7 +4,7 @@ import "./PlanCard.css";
 function PlanCard({ plan }) {
   const [complete, setComplete] = useState(false);
 
-  function handleClick() {
+  function handleCheck() {
     setComplete(true);
   }
 
@@ -12,17 +12,14 @@ function PlanCard({ plan }) {
     <>
       {complete ? (
         <div className="checked-container">
-          <span className="checked">Complete</span>
+          <span className="checked">{plan}</span>
         </div>
       ) : (
         <div className="card-container">
           <div className="plan">{plan}</div>
           <div className="icon-container">
             <div className="icons">
-              <i onClick={handleClick} class="bi bi-patch-check-fill"></i>
-            </div>
-            <div className="icons">
-              <i className="bi bi-trash-fill"></i>
+              <i onClick={handleCheck} class="bi bi-patch-check-fill"></i>
             </div>
           </div>
         </div>

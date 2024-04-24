@@ -18,6 +18,7 @@
 
 .plan {
   font-size: 25px;
+  transition: 0.5s;
 }
 
 .icon-container {
@@ -30,7 +31,6 @@
   cursor: pointer;
   font-size: 30px;
   padding: 10px;
-  transition: 0.5s;
 }
 
 .icon-container .icons .bi:hover {
@@ -56,5 +56,6 @@
 }
 
 .checked {
+  text-decoration: line-through;
   font-size: 25px;
 }
