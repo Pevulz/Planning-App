@@ -1,0 +1,60 @@
+.card-container {
+  height: 50px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to left bottom,
+    #ffbc00,
+    #ffac00,
+    #ff9c00,
+    #ff8b00,
+    #ff7900
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.plan {
+  font-size: 25px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container .icons .bi {
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.icon-container .icons .bi:hover {
+  color: blue;
+}
+
+.checked-container {
+  height: 50px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    to left bottom,
+    #00ff2c,
+    #02f22d,
+    #05e62d,
+    #09d92d,
+    #0ccd2d
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.checked {
+  font-size: 25px;
+}

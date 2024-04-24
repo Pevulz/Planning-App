@@ -1,7 +1,61 @@
 .container {
   height: 720px;
   width: 500px;
-  background-color: aquamarine;
-  display: grid;
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #0f0005,
+    #18000d,
+    #1d0015,
+    #20001c,
+    #20001c,
+    #20001c,
+    #20001c,
+    #1d0015,
+    #18000d,
+    #0f0005,
+    #000000
+  );
+  border-radius: 20px;
+}
+
+.title {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.userForm {
+  display: flex;
   justify-content: center;
+}
+
+.userInput {
+  height: 25px;
+  border-radius: 5px;
+}
+
+.plan-container {
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #39131c,
+    #6e1a28,
+    #a5222c,
+    #da3323
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 65%;
+  margin: 50px;
+  border-radius: 20px;
+}
+
+.defaultDisplay {
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
 }
